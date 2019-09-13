@@ -1,3 +1,4 @@
+/* Variable */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -17,12 +18,21 @@ body {
           align-items: center;
 }
 
+/* Button */
+.button {
+  padding: 13px 116px;
+  background: #6979F8;
+  border-radius: 6px;
+  font-size: 17px;
+  color: white;
+}
+
 /* Form Feedback */
 .form-feedback {
   width: 401px;
   height: 312px;
   padding: 40px;
-  background: #F7F5F9;
+  background-color: #F7F5F9;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -32,4 +42,8 @@ body {
   font-size: 24px;
   font-weight: bold;
   line-height: 20px;
+}
+
+.form-feedback__input {
+  margin: 25px 0;
 }

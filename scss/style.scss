@@ -1,3 +1,8 @@
+/* Variable */
+
+$form-bg: #F7F5F9;
+$button-bg: #6979F8;
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -12,6 +17,18 @@ body {
   align-items: center;
 }
 
+/* Button */
+
+.button {
+  padding: 13px 116px;
+
+  background: $button-bg;
+  border-radius: 6px;
+
+  font-size: 17px;
+  color: white;
+}
+
 /* Form Feedback */
 
 .form-feedback {
@@ -20,7 +37,7 @@ body {
 
   padding: 40px;
 
-  background: #F7F5F9;
+  background-color: $form-bg;
 
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
 
@@ -30,5 +47,9 @@ body {
     font-size: 24px;
     font-weight: bold;
     line-height: 20px;
+  }
+
+  &__input {
+    margin: 25px 0;
   }
 }
