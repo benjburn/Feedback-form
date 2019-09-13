@@ -1,3 +1,35 @@
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Form Feedback */
+.form-feedback {
+  width: 401px;
+  height: 312px;
+  padding: 40px;
+  background: #F7F5F9;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.form-feedback__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
 }
