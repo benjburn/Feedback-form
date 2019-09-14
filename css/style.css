@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variable */
 *,
 *:after,
@@ -9,6 +10,14 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+/* Явное наследование стилей для инпутов */
+input,
+textarea,
+select,
+button {
+  font: inherit;
 }
 
 /* Super-Center */
@@ -64,8 +73,6 @@ body {
   outline: 0;
   border: 0;
   border-radius: 6px;
-  font-size: 15px;
-  color: #000;
   -webkit-transition: border 0.1s linear;
   transition: border 0.1s linear;
   /* &:valid:not(:placeholder-shown) {
@@ -81,6 +88,28 @@ body {
     */
 }
 
+.form-feedback__input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #D0C9D6;
+}
+
+.form-feedback__input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #D0C9D6;
+}
+
+.form-feedback__input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #D0C9D6;
+}
+
+.form-feedback__input::placeholder {
+  font-size: 15px;
+  color: #D0C9D6;
+}
+
 .form-feedback__input:focus {
   border: 1px solid #854fc8;
+  width: 403px;
+  height: 50px;
 }

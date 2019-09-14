@@ -14,6 +14,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Явное наследование стилей для инпутов */
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
 /* Super-Center */
 
 .pos-center {
@@ -76,12 +85,17 @@ body {
     border: 0;
     border-radius: 6px;
 
-    font-size: 15px;
-    color: #000;
     transition: border 0.1s linear;
+
+    &::placeholder {
+      font-size: 15px;
+      color: #D0C9D6;
+    }
 
     &:focus {
       border: 1px solid #854fc8;
+      width: 403px;
+      height: 50px;
     }
 
     // Стили для валидных и невалидных
