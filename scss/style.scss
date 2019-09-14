@@ -1,21 +1,12 @@
 /* Variable */
 
-$form-bg: #F7F5F9;
-$button-bg: #6979F8;
+$form-bg: #f7f5f9;
+$button-bg: #6979f8;
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
-// /* Container */
-// .container {
-//   height: 100vh;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
 
 /* Super-Center */
 
@@ -31,11 +22,15 @@ body {
 /* Button */
 
 .button {
-  padding: 13px 116px;
+  width: 100%;
+  padding: 13px 0;
 
   background: $button-bg;
   border-radius: 6px;
+  border: 0;
 
+  text-align: center;
+  // text-decoration:
   font-size: 17px;
   color: white;
 }
@@ -54,15 +49,25 @@ body {
 
   border-radius: 12px;
 
-  
-
   &__title {
+    display: block;
     font-size: 24px;
     font-weight: bold;
     line-height: 20px;
   }
 
   &__input {
+    padding: 14px;
+    width: 401px;
+    height: 48px;
     margin: 25px 0;
+
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+
+    border: 0;
+    border-radius: 6px;
+
+    font-size: 15px;
+    color: #d0c9d6;
   }
 }
