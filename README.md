@@ -1,9 +1,5 @@
 # Feedback-form
 [Тестовое задание от DS Academy](https://docs.google.com/document/d/1SlFKZXrhHSMF1dj_D1lEMmlew6uF0O4CAbJCgjFJoQc/edit)
-
-
-# Feedback-form
- Тестовое задание от DS Academy
  
 ## Техническое задание:
  Необходимо сделать страницу со статичной версткой формы, представленной на макете: [макет в Figma](https://www.figma.com/file/fgmrVXMjoofNw7eT5fUvvG/DS-Academy---frontend?node-id=0%3A1) 
