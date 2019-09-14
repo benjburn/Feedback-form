@@ -79,8 +79,22 @@ body {
     font-size: 15px;
     color: #000;
     transition: border 0.1s linear;
+
     &:focus {
       border: 1px solid #854fc8;
     }
+
+    // Стили для валидных и невалидных
+    /* &:valid:not(:placeholder-shown) {
+      border: 1px solid #00c48c;
+
+      //background-color: #7ddfc3;
+    }
+    &:invalid:not(:placeholder-shown) {
+      border: 1px solid #ff647c;
+
+      //background-color: #fdafbb;
+    }
+    */
   }
 }

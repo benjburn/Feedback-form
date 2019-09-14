@@ -68,6 +68,17 @@ body {
   color: #000;
   -webkit-transition: border 0.1s linear;
   transition: border 0.1s linear;
+  /* &:valid:not(:placeholder-shown) {
+      border: 1px solid #00c48c;
+
+      //background-color: #7ddfc3;
+    }
+    &:invalid:not(:placeholder-shown) {
+      border: 1px solid #ff647c;
+
+      //background-color: #fdafbb;
+    }
+    */
 }
 
 .form-feedback__input:focus {

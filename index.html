@@ -11,11 +11,12 @@
 <body>
   <form id="form-feedback" class="form-feedback pos-center">
     <span class="form-feedback__title">Задать вопрос</span>
-    <input name="name" type="text" class="form-feedback__input" placeholder="Фамилия Имя Отчество *" required>
-    <input name="phone" type="tel" class="form-feedback__input" placeholder="Телефон *" required>
-    <input name="email" type="email" class="form-feedback__input" placeholder="Email">
 
-    <input class="form-button" formaction="https://digital-spectr.com/ac/academy.php" formmethod="POST" type="submit"
+    <input type="text" name="name" class="form-feedback__input" placeholder="Фамилия Имя Отчество *" autofocus required>
+    <input type="tel" name="phone" class="form-feedback__input" placeholder="Телефон *" required>
+    <input type="email" name="email" class="form-feedback__input" placeholder="Email">
+
+    <input type="submit" class="form-button" formaction="https://digital-spectr.com/ac/academy.php" formmethod="POST"
       value="Отправить запрос" form="form-feedback">
     <!-- <button class="button">Отправить запрос</button> -->
   </form>
