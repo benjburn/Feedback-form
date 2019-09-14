@@ -66,6 +66,8 @@ body {
   border-radius: 6px;
   font-size: 15px;
   color: #000;
+  -webkit-transition: border 0.1s linear;
+  transition: border 0.1s linear;
 }
 
 .form-feedback__input:focus {
