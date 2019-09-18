@@ -43,6 +43,23 @@ button {
   text-transform: uppercase;
   font-size: 17px;
   color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form-button:hover, .form-button:focus {
+  outline: none;
+  background-color: #f7f5f9;
+  color: #854FC8;
+  border: 2px solid #854FC8;
+  font-weight: 600;
+}
+
+.form-button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-filter: saturate(250%);
+          filter: saturate(250%);
 }
 
 /* Form Feedback */
@@ -57,9 +74,12 @@ button {
 }
 
 .form-feedback__title {
+  display: block;
+  width: 168px;
   font-size: 24px;
   font-weight: bold;
   line-height: 20px;
+  height: 20px;
 }
 
 .form-feedback__input {
@@ -74,17 +94,6 @@ button {
   border-radius: 6px;
   -webkit-transition: border 0.1s linear;
   transition: border 0.1s linear;
-  /* &:valid:not(:placeholder-shown) {
-      border: 1px solid #00c48c;
-
-      //background-color: #7ddfc3;
-    }
-    &:invalid:not(:placeholder-shown) {
-      border: 1px solid #ff647c;
-
-      //background-color: #fdafbb;
-    }
-    */
 }
 
 .form-feedback__input::-webkit-input-placeholder {
@@ -107,8 +116,20 @@ button {
   color: #d0c9d6;
 }
 
+.form-feedback__input:hover {
+  border: 1px solid #DBA5F5;
+}
+
 .form-feedback__input:focus {
   border: 1px solid #854fc8;
-  width: 403px;
-  height: 50px;
+}
+
+.form-feedback__input:valid:not(:placeholder-shown) {
+  border: 1px solid #00c48c;
+  background-color: rgba(125, 223, 195, 0.1);
+}
+
+.form-feedback__input:invalid:not(:placeholder-shown) {
+  border: 1px solid #ff647c;
+  background-color: rgba(252, 176, 186, 0.1);
 }

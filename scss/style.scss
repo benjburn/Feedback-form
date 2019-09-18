@@ -50,7 +50,23 @@ button {
   text-transform: uppercase;
   font-size: 17px;
   color: white;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $form-bg;
+    color: #854FC8;
+    border: 2px solid #854FC8;
+    font-weight: 600;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(250%);
+  }
 }
+
 
 /* Form Feedback */
 
@@ -67,9 +83,12 @@ button {
   border-radius: 12px;
 
   &__title {
+    display: block;
+    width: 168px;
     font-size: 24px;
     font-weight: bold;
     line-height: 20px;
+    height: 20px;
   }
 
   &__input {
@@ -91,23 +110,28 @@ button {
       color: #d0c9d6;
     }
 
+    &:hover {
+      border: 1px solid #DBA5F5;
+
+    }
+
     &:focus {
       border: 1px solid #854fc8;
-      width: 403px;
-      height: 50px;
     }
+
+
 
     // Стили для валидных и невалидных
-    /* &:valid:not(:placeholder-shown) {
+    &:valid:not(:placeholder-shown) {
       border: 1px solid #00c48c;
 
-      //background-color: #7ddfc3;
+      background-color: rgba(125, 223, 195, 0.1);
     }
+
     &:invalid:not(:placeholder-shown) {
       border: 1px solid #ff647c;
 
-      //background-color: #fdafbb;
+      background-color: rgba(99%, 69%, 73%, 0.1);
     }
-    */
   }
 }
