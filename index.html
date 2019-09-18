@@ -9,15 +9,14 @@
 </head>
 
 <body>
-  <form id="form-feedback" class="form-feedback pos-center">
+  <form id="form-feedback" class="form-feedback pos-center" novalidate>
     <span class="form-feedback__title">Задать вопрос</span>
     <input type="text" name="name" class="form-feedback__input form-text" placeholder="Фамилия Имя Отчество *" autofocus
       required>
     <input type="tel" name="phone" class="form-feedback__input form-tel" placeholder="Телефон *" required>
     <input type="email" name="email" class="form-feedback__input form-email" placeholder="Email">
 
-    <input type="submit" class="form-button validateBtn" formaction="https://digital-spectr.com/ac/academy.php"
-      formmethod="POST" value="Отправить запрос" form="form-feedback">
+    <input type="submit" class="form-button" value="Отправить запрос" form="form-feedback">
     <!-- <button class="button">Отправить запрос</button> -->
   </form>
 
