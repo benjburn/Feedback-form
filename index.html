@@ -1,3 +1,5 @@
+// Евгений Антипин
+// https://github.com/benjburn/Feedback-form
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -9,18 +11,15 @@
 </head>
 
 <body>
-  <form id="form-feedback" class="form-feedback pos-center" novalidate>
+  <form class="form-feedback pos-center" id="form-feedback">
     <span class="form-feedback__title">Задать вопрос</span>
-    <input type="text" name="name" class="form-feedback__input form-text" placeholder="Фамилия Имя Отчество *" autofocus
-      required>
-    <input type="tel" name="phone" class="form-feedback__input form-tel" placeholder="Телефон *" required>
-    <input type="email" name="email" class="form-feedback__input form-email" placeholder="Email">
+    <input class="form-feedback__input" type="text" name="name" placeholder="Фамилия Имя Отчество *" autofocus required>
+    <input class="form-feedback__input" type="tel" name="phone" placeholder="Телефон *" required>
+    <input class="form-feedback__input" type="email" name="email" placeholder="Email">
 
-    <input type="submit" class="form-button" value="Отправить запрос" form="form-feedback">
-    <!-- <button class="button">Отправить запрос</button> -->
+    <input class="form-button" type="submit" value="Отправить запрос"
+      formaction="https://digital-spectr.com/ac/academy.php" form="form-feedback">
   </form>
-
-  <script src="js/script.js"></script>
 </body>
 
 </html>
